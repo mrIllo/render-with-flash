@@ -14,7 +14,7 @@
 module RenderWithFlash
   module Render
 
-    def render(*args)
+    def render(*args, &block)
       options = args.extract_options!
 
       # default flash_types and those configured via add_flash_types
